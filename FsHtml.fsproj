@@ -1,7 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <PackageVersion>0.1.1</PackageVersion>
+    <PackageId>FsHtml</PackageId>
+    <Title>FsHtml</Title>
+    <Authors>y2k</Authors>
+    <Description>F# DSL for HTML</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/y2k/FsHtml/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/y2k/FsHtml</PackageProjectUrl>
+    <PackageTags>FSharp; Html</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <RepositoryUrl>https://github.com/y2k/FsHtml.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
