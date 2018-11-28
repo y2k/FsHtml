@@ -1,7 +1,7 @@
 # Examples
 
 ### F# DSL
-```
+```f#
 let private item title =
     tr [] [
         td [] [ img [ "class" %= "round-img"; "src" %= "/img1.jpeg" ] [] ]
@@ -21,7 +21,7 @@ html [] [
 ```
 
 ### HTML result
-```
+```html
 <html>
   <body>
     <table>
