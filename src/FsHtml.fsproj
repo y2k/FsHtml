@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageVersion>0.1.1</PackageVersion>
+    <PackageVersion>0.2.0</PackageVersion>
     <PackageId>FsHtml</PackageId>
     <Title>FsHtml</Title>
     <Authors>y2k</Authors>
     <Description>F# DSL for HTML</Description>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/y2k/FsHtml/master/LICENSE</PackageLicenseUrl>
+    <PackageLicense>https://raw.githubusercontent.com/y2k/FsHtml/master/LICENSE</PackageLicense>
     <PackageProjectUrl>https://github.com/y2k/FsHtml</PackageProjectUrl>
     <PackageTags>FSharp; Html</PackageTags>
     <IncludeSymbols>true</IncludeSymbols>

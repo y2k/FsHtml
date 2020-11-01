@@ -5,7 +5,7 @@ open System.Text
 type Attr = Attr of string * string
 type Element = Element of string * Attr list * Element list | Text of string
 
-let toString (e : Element) : string = 
+let toString (e : Element) : string =
     let sb = StringBuilder()
 
     let rec toString' indent e =
@@ -13,10 +13,10 @@ let toString (e : Element) : string =
         match e with
         | Text text ->
             sb.Append(text) |> ignore
-        | Element (name, attrs, children) -> 
+        | Element (name, attrs, children) ->
             sb.Append(offset).Append("<").Append(name) |> ignore
             attrs
-            |> List.iter (fun a -> 
+            |> List.iter (fun a ->
                 match a with
                 | Attr (k, v) -> sb.Append(" ").Append(k).Append("=\"").Append(v).Append("\"")
                 |> ignore)
@@ -33,8 +33,11 @@ let toString (e : Element) : string =
 let (%=) name value = Attr (name, value)
 let (~%) s = [Text s]
 
-let private element (name : string) (attrs : Attr list) (children : Element list) = 
+let str s = Text s
+
+let inline private element (name : string) (attrs : Attr list) (children : Element list) =
     Element (name, attrs, children)
+
 // Gets from https://www.html-5-tutorial.com/all-html-tags.htm
 let a = element "a"
 let abbr = element "abbr"

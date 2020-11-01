@@ -1,22 +1,19 @@
 # Examples
 
 ### F# DSL
-```f#
+```fsharp
 let private item title =
     tr [] [
         td [] [ img [ "class" %= "round-img"; "src" %= "/img1.jpeg" ] [] ]
-        td [] %(sprintf "Item #%s" title)
-    ]
+        td [] %(sprintf "Item #%s" title) ]
 
 html [] [
     body [] [
+        h1 [] [ str "Example" ]
         table [] [
-            yield! 
-                [1..5] 
-                |> List.map (string >> item)
-        ]
-    ]
-]
+            yield!
+                [1..5]
+                |> List.map (string >> item) ] ] ]
 |> (toString >> printfn "%s")
 ```
 
@@ -24,6 +21,7 @@ html [] [
 ```html
 <html>
   <body>
+    <h1>Example</h1>
     <table>
       <tr>
         <td>
